@@ -1,0 +1,44 @@
+.goods{
+
+}
+
+.card{
+    width: 180px;
+    height: 250px;
+    margin-right: 32px;
+    background-color: white;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 16px;
+    margin-top: 16px;
+    overflow: auto;
+}
+
+.card:hover{
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.12);
+}
+
+.card:active{
+    background-color: rgb(252,252,252);
+}
+
+.card a{
+    color: black;
+}
+
+
+.loader-box{
+    margin-left: 25%;
+    margin-top: 150px;
+    font-size: 14px;
+}
+
+.error-message:before{
+    content: '❌   ';
+}
+
+.error-message{
+    margin-top: 40px;
+    background-color: white;
+    padding: 20px;
+}

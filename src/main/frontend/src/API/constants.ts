@@ -1,0 +1,3 @@
+const getApiPrefix = () => ""
+
+export { getApiPrefix }

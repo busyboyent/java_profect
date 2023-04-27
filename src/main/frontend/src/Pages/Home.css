@@ -1,0 +1,113 @@
+.container {
+    margin-top: 20px;
+    margin-left: 50px;
+    display: grid;
+    grid-template-columns: 0.25fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+            "logo header header"
+            "category main main"
+            "category main main";
+}
+.logo { grid-area: logo; }
+.header { grid-area: header; }
+.category { grid-area: category; }
+.main { grid-area: main; }
+.logo { font-size: 26px; }
+a { text-decoration: none; }
+
+.userProfile{
+    background-color: white;
+    margin: 0 auto;
+    width: 50%;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+}
+
+.orders-list-item{
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+}
+
+.order-status{
+    font-size: 32px;
+}
+
+.order-status-success{
+    color: green;
+}
+
+.order-status-processing{
+    color: #0395FF;
+}
+
+.order-status-cancelled{
+    color: red;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1337;
+    margin: 0;
+    padding: 0;
+    background: rgba(0,0,0,0.25);
+    visibility: visible;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+.modal-content {
+    position: relative;
+    margin: 30px auto;
+    max-width: 40%;
+    width: auto;
+    font-size: 20px;
+    border: 1px solid rgba(0,0,0,.2);
+    outline: 0;
+    background: white;
+    color: black;
+    padding: 50px 100px 50px;
+}
+.modal-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
+
+.close {
+    float: right;
+    font-family: sans-serif;
+    font-size: 72px;
+    color: black;
+    text-shadow: 0 1px 0 #ccc;
+    opacity: .5;
+    text-decoration: none;
+    user-select: none;
+}
+.close:focus, .close:hover {
+    color: red;
+    text-decoration: none;
+    cursor: pointer;
+    opacity: .75;
+}
+.modal-body {
+    overflow: auto;
+}
+.modal-body img{
+    float: left;
+    margin-right: 50px;
+    user-select: none;
+}
